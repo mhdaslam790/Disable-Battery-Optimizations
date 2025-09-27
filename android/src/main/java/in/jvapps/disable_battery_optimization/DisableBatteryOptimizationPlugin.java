@@ -238,18 +238,18 @@ public class DisableBatteryOptimizationPlugin implements FlutterPlugin, Activity
             showAutoStartEnabler(showImages,() -> {
                 setManAutoStart(true);
                 if (!isManBatteryOptimizationDisabled)
-                    showManBatteryOptimizationDisabler(true);
+                    showManBatteryOptimizationDisabler(showImages,true);
                 else
                     showIgnoreBatteryPermissions();
             }, () -> {
                 if (!isManBatteryOptimizationDisabled)
-                    showManBatteryOptimizationDisabler(true);
+                    showManBatteryOptimizationDisabler(showImages,true);
                 else
                     showIgnoreBatteryPermissions();
             });
         } else {
             if (!isManBatteryOptimizationDisabled)
-                showManBatteryOptimizationDisabler(true);
+                showManBatteryOptimizationDisabler(showImages,true);
             else
                 showIgnoreBatteryPermissions();
         }
