@@ -196,8 +196,7 @@ public class DisableBatteryOptimizationPlugin implements FlutterPlugin, Activity
                 autoStartMessage,
                 positiveCallback,
                 negativeCallback,
-                showImages,
-                );
+                showImages);
     }
 
     private void showManBatteryOptimizationDisabler(boolean showImages,boolean isRequestNativeBatteryOptimizationDisabler) {
@@ -216,7 +215,7 @@ public class DisableBatteryOptimizationPlugin implements FlutterPlugin, Activity
                     if (isRequestNativeBatteryOptimizationDisabler) {
                         showIgnoreBatteryPermissions();
                     }
-                },showImages,);
+                },showImages);
     }
 
     private void showIgnoreBatteryPermissions() {

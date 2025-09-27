@@ -248,7 +248,7 @@ public class DialogKillerManagerBuilder {
                 helpImageView.setVisibility(View.GONE);
             } 
         } else {
-            helpImageView.setVisibility(View.GONE)
+            helpImageView.setVisibility(View.GONE);
         }
     }
 }
